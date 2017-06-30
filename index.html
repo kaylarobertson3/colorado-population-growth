@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>Colorado Population Growth Projection</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+	<!-- Mobile meta tags-->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="MobileOptimized" content="320"/>
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/lib/leaflet-0.75.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="MarkerCluster.css" />
+	<link rel="stylesheet" href="MarkerCluster.Default.css" />
+	<style type="text/css">
+	body, html { margin:0;padding:0;width:100%; height:100%; overflow: hidden; }
+	</style>
+
+</head>
+<body>
+<div class="info"></div>
+<div class="legend"></div>
+
+	<!-- <div class="legend">
+				<div class="population">Population by county</div>
+					<br>
+				<div class="break1">> X</div>
+					<div class="box1"></div>
+					<br>
+				<div class="break2">X</div>
+					<div class="box2"></div>
+					<br>
+				<div class="break3">X</div>
+					<div class="box3"></div>
+					<br>
+				<div class="break4">X</div>
+						<div class="box4"></div>
+						<br>
+				<div class="break5">X</div>
+							<div class="box5"></div>
+								<br>
+				<div class="break6">X</div>
+								<div class="box6"></div>
+									<br>
+				<div class="break7">< X</div>
+									<div class="box7"></div>
+			</div> -->
+
+	<div id="map"></div>
+
+	<!-- Javascript -->
+	<!-- Libraries -->
+	<script src="js/lib/leaflet-0.75.js"></script>
+	<script src="js/lib/tile.stamen-1.3.0.js"></script>
+	<script src="leaflet.markercluster-src.js"></script>
+
+
+	<!-- Our data sources -->
+	<script src="json/c-counties-pop-geojson.js"></script>
+
+	<!-- The file that creates the map -->
+	<script src="js/script.js"></script>
+</body>
+</html>
