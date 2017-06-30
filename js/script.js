@@ -16,9 +16,9 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-  this._div.innerHTML = '<h2>Projected population change 2015 - 2025</h2>' +  (props ?
-    '<h3><b></h3>' + props.name + '</b><br />' + props.Workbook1_percentPpopulationChange + ' percent change'
-    : '<h3>Hover over a county</h3>');
+  this._div.innerHTML = '<h4>Projected population change 2015 - 2025</h4>' +  (props ?
+    '<p><b></p>' + props.name + '</b><br />' + props.Workbook1_percentPpopulationChange + ' percent change'
+    : '<p>Hover over a county</hp>');
 };
 
 info.addTo(map);
@@ -84,7 +84,6 @@ function onEachFeature(feature, layer) {
   layer.on({
     mouseover: highlightFeature,
     mouseout: resetHighlight,
-    click: zoomToFeature
   });
 }
 
@@ -102,7 +101,7 @@ legend.onAdd = function (map) {
 
   var div = L.DomUtil.create('div', 'info legend'),
     grades = [-2.9, -2, -1.1, -.5, .1, 6, 13, 23, 33, 50],
-    labels = ['<h2>Legend</h2>'],
+    labels = ['<h4>Legend</h4>'],
     from, to;
 
   for (var i = 0; i < grades.length; i++) {
