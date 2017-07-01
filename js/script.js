@@ -95,7 +95,7 @@ geojson = L.geoJson(countiesData, {
 map.attributionControl.addAttribution('');
 
 // legend that won't work !!!!!!
-var legend = L.control({position: 'topright'});
+var legend = L.control({position: 'bottomleft'});
 
 legend.onAdd = function (map) {
 
